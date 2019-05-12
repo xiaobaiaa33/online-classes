@@ -1,0 +1,184 @@
+/* 隐藏头部 */
+.index-hide-head {
+    position: fixed;
+    top: 0;
+    background: #2E323E;
+    width: 100%;
+    z-index: 5;
+    display: none;
+}
+.index-hide-head>div {
+    width:1260px;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.index-hide-head div>ul {
+    display: flex;
+}
+.index-hide-head div>ul>li {
+    margin-left: 30px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+}
+.index-hide-head .search input {
+    height: 20px;
+    padding-left: 10px;
+    outline: 0;
+}
+.index-hide-head button {
+    background:#55B929;
+    border: 0;
+    outline: 0;
+    width: 40px;
+    height: 24px;
+    cursor: pointer;
+}
+.hide-head-user {
+    line-height: 28px;
+    font-size: 13px;
+}
+.index-hide-head ul li {
+    position: relative;
+}
+.index-hide-head ul li ul {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    background: rgba(200,200,200,0.8);
+    top:31px;
+    left:-26px;
+    text-align: center;
+    height: 0;
+    opacity: 0;
+    transition: all 1s;
+    overflow: hidden;
+}
+.index-hide-head ul li ul li {
+    margin: 5px 10px;
+    width: 70px;
+}
+/* 头部 */
+.index-head {
+    padding-top:20px;
+    width:1260px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap:wrap;
+}
+/* 登陆注册 */
+.index-head .index-head-user {
+    /* float: right; */
+    margin-left: 880px;
+    font-size: 14px;
+}
+
+/* 导航 */
+.index-head .index-head-list .list {
+    margin-top: 10px;
+    height: 42px;
+}
+.index-head .index-head-list .list li {
+    margin-right: 40px;
+}
+.index-head .index-head-list .list li a:hover {
+    color: #55B929;
+}
+/* 横线过渡 */
+.index-head .index-head-list .list li {
+    display: inline-block;
+    position: relative;
+    line-height: 2;
+}
+.index-head .index-head-list .list li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    height: 2px;
+    width: 100%;
+    transform-origin: 50% bottom;
+    background: #1395ba;
+	transition: all 1s;
+    /* transition: all 0.5s; */
+}
+.index-head .index-head-list .list li:hover::after {
+    transform: scaleX(1);
+}
+
+/* 脚部 */
+.index-foot {
+    background:#333333;
+}
+/* 脚部约束 */
+.index-foot .index-foot-overall {
+    width:1260px;
+    margin: auto;
+    padding-top: 24px;
+}
+/* 脚部logo */
+.index-foot .index-foot-overall .index-foot-left {
+    float: left;
+}
+.index-foot .index-foot-overall .index-foot-left>p {
+    font-size: 13px;
+    color: #999999;
+    padding-top:10px;
+}
+/* 脚步列表 */
+.index-foot .index-foot-list {
+    margin-left: 160px;
+    float: left;
+}
+.index-foot .index-foot-list>div {
+    float: left;
+    margin-left: 70px;
+}
+/* 列表标题 */
+.index-foot .index-foot-list .list-title {
+    color:#CCCCCC;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+/* 二维码 */
+.index-foot .index-foot-list div img {
+    border-radius: 50%;
+    width: 40px;
+}
+.index-foot .index-foot-list div {
+    position: relative;
+}
+/* .index-foot .index-foot-list div  */
+
+.index-foot .index-foot-list .list-left {
+    float: left;
+    margin-right: 20px;
+}
+/* 脚步超链接 */
+.index-foot .index-foot-list a {
+    font-size: 14px;
+    color:#666666;
+}
+.index-foot .index-foot-list li {
+    margin-top: 5px;
+}
+.index-foot .index-foot-list a:hover {
+    color: #55B929;
+}
+
+/* 版权备案号 */
+.index-foot .index-foot-copy {
+    margin-top: 20px;
+    text-align: center;
+    color:#666666;
+    font-size: 12px;
+}
+.index-foot .index-foot-copy a {
+    color:#666666;
+}
+.index-foot .index-foot-copy a:hover {
+    color: #55B929;
+}

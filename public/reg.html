@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="css/initial.css">
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+    <!-- 用户名：<input type="text" id="uname"><br>
+    密码：<input type="password" id=upwd><br>
+    电子邮件：<input type="text" id="email"><br>
+    电话号码：<input type="text" id="phone"><br>
+    真实姓名：<input type="text" id="user_name"><br>
+    性别：
+    <input type="radio" name="gender" value="1" id="nan" checked><label for="nan">男</label>
+    <input type="radio" name="gender" value="0" id="nv"><label for="nv">女</label><br>
+    <input type="radio" name="ts" value="0" id="s" checked><label for="s">学生</label>
+    <input type="radio" name="ts" value="1" id="t"><label for="t">教师</label><br>
+    <button onclick="regg()">注册</button> -->
+    <div class="reg-bg full-screen">
+        <table></table>
+        <div class="reg-list color-white">
+            <table>
+                <tr>
+                    <td class="reg-title color-white">新用户注册</td>
+                    <td class="login"><a class="color-white" href="login.html">直接登录</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="name">用户名：</td>
+                    <td>
+                        <input type="text" id="uname" placeholder="请输入用户名" onclick="reg_uname()" onblur="reg_lose_uname()">
+                    </td>
+                    <td class="msg"><span id="uname_msg"></span></td>
+                </tr>
+                <tr>
+                    <td class="name">登录密码：</td>
+                    <td>
+                        <input type="password" id="upwd" placeholder="请输入密码" onclick="reg_upwd()" onblur="reg_lose_upwd()">
+                    </td>
+                    <td class="msg"><span id="upwd_msg"></span></td>
+                </tr>
+                <tr>
+                    <td class="name">确认密码：</td>
+                    <td>
+                        <input type="password" id="upwd2" placeholder="请确认密码" onblur="reg_lose_upwd2()">
+                    </td>
+                    <td class="msg"><span id="upwd2_msg"></span></td>
+                </tr>
+                <tr>
+                    <td class="name">电子邮箱：</td>
+                    <td>
+                        <input type="text" id="email" placeholder="请输入电子邮件" onclick="reg_email()" onblur="reg_lose_email()">
+                    </td>
+                    <td class="msg"><span id="email_msg"></span></td>
+                </tr>
+                <tr>
+                    <td class="name">手机号码：</td>
+                    <td>
+                        <input type="text" id="phone" placeholder="请输入您的手机号码" onclick="reg_phone()" onblur="reg_lose_phone()">
+                    </td>
+                    <td class="msg"><span id="phone_msg"></span></td>
+                </tr>
+                <tr>
+                    <td class="name">真实姓名：</td>
+                    <td>
+                        <input type="text" id="user_name" placeholder="请输入您的真实姓名" onclick="reg_user_name()" onblur="reg_lose_user_name()">
+                    </td>
+                    <td class="msg"><span id="user_name_msg"></span></td>
+                </tr>
+                <tr>
+                    <td class="name">性别：</td>
+                    <td>
+                        <input type="radio" name="gender" value="1" id="nan" checked><label for="nan">男</label>
+                        <input type="radio" name="gender" value="0" id="nv"><label for="nv">女</label>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                    <input type="radio" name="ts" value="0" id="s" checked><label for="s">学生</label>
+                    <input type="radio" name="ts" value="1" id="t"><label for="t">教师</label>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button onclick="regg()" class="color-white">提交注册信息</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="js/reg.js"></script>
+</html>

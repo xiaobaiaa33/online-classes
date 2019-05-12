@@ -1,0 +1,145 @@
+/* 课程 */
+.course {
+    display: flex;
+    margin-top: 30px;
+    line-height: 25px;
+    background-color: #f8f8f8;
+}
+.course span {
+    display: inline-block;
+    width: 2px;
+    height: 40px;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+.course img {
+    height: 60px;
+    padding: 0 45px;
+}
+.course .course-title {
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 190px;
+}
+.course .course-title p a {
+    color:#55b929;
+    font-size: 12px;
+}
+.course .course-title p a:hover {
+    color:#96D103;
+}
+.course .good {
+    display: inline-block;
+    background-color: #cba265;
+    color:#fff;
+    width: 55px;
+    height: 23px;
+    border-radius: 2px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 23px;
+    margin-left: 10px;
+}
+.course .good:hover {
+    background-color: rgba(203,162,101,0.8);
+}
+/* 左导航 */
+.left {
+    float: left;
+    padding: 12px;
+    background-color: #f0f0f0;
+    border-right: 2px solid #E0E0E0;
+}
+.left>img {
+    height: 130px;
+    border-radius:8px;
+}
+/* 列表 */
+.left ul {
+    margin: 10px 0;
+}
+.left ul li,.left .course-share,.left .wx>div{
+    height: 40px;
+    padding: 10px;
+    margin: 1px 0;
+    background-color: #fff;
+    line-height: 40px;
+}
+.left ul li:hover {
+    background-color: #f8f8f8;
+}
+.left ul li a {
+    display: inline-block;
+    width: 100%;
+}
+.left ul li a:hover {
+    color: #55b929;
+}
+.course-share {
+    display: flex;
+    margin: 10px 0;
+}
+.left .course-share img {
+    border-radius: 50%;
+    height: 25px;
+    cursor: pointer;
+    opacity: 0.7;
+    margin: 7px 0 0 20px;
+}
+.left .course-share img:hover {
+    opacity: 1;
+}
+.left .wx {
+    margin-top: 10px;
+}
+.left .wx div img {
+    height: 30px;
+    padding: 0 14px;
+    float: left;
+}
+.left .wx div p {
+    font-size: 14px;
+}
+/* 右内容 */
+.right {
+    float: right;
+    width:78%;
+    margin-top: 20px;
+}
+.right>div {
+    display: flex;
+    flex-wrap:wrap;
+}
+.right select {
+    margin-left: 20px;
+    outline: 0;
+    width: 150px;
+}
+/* 课程按钮 */
+.right .course-name {
+    margin: 10px 0;
+}
+.right .course-name a{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    background: #fafafa;
+    color:#333;
+    text-align: center;
+    line-height: 30px;
+    border-bottom:1px solid #DEDEDE;
+}
+.right .course-name a:hover {
+    background:#ddd;
+}
+.right .course-name a img{
+    width: 14px;
+    vertical-align: middle;
+}
+.right div video {
+    width: 960px;
+    height: 540px;
+    background: #000;
+    margin-left: 20px;
+}

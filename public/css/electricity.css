@@ -1,0 +1,150 @@
+body {
+    background: #fff;
+}
+.width {
+    width: 1200px;
+    margin: 0 auto;
+}
+.width div .cour {
+    display: flex;
+    margin-top: 20px;
+}
+/* 导航 */
+div .list {
+    display: flex;
+    font-size: 15px;
+    margin-top: 20px;
+}
+li+li::before {
+    content: ">";
+    padding: 0 5px;
+}
+a:hover {
+    color: #56B929;
+}
+/* 课程图片 */
+.course .video {
+    width: 510px;
+    height: 288px;
+    background: url(../images/electricity/video.jpg);
+    background-size: cover;
+    text-align: center;
+    line-height: 288px;
+}
+.course .video a {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 1s;
+}
+.course .video a:hover {
+    background: rgba(255,255,255,0.5);
+    color: #000;
+}
+
+/* 课程简介 */
+.course-content {
+    margin-left: 30px;
+}
+.course-content .title {
+    font-size: 28px;
+}   
+.course-content>div {
+    margin:30px 0 102px 26px;
+    font-size: 14px;
+    color:#666;
+}
+.course-content>div p {
+    margin: 5px 0;
+}
+.course-content>div p:first-child {
+    color:#000;
+}
+/* 按钮 */
+.course-content button {
+    width: 200px;
+    height: 50px;
+    background-color: #FF8C58;
+    border-radius:2px;
+    border:0;
+    color:#fff;
+    font-size: 17px;
+    cursor: pointer;
+    outline: 0;
+}
+.course-content button:hover {
+    background-color: rgba(255,122,62,0.8);
+}
+
+.active {
+    border-bottom: 5px solid #56B929;
+}
+
+.left,.right {
+    margin-top: 100px;
+}
+/* 左部分 */
+#c2,#c3 {
+    display: none;
+}
+.left {
+    float: left;
+    width: 70%;
+}
+.left .left-list {
+    display: flex;
+    font-size: 25px;
+}
+.left .left-list p {
+    margin-left: 60px;
+}
+.left .left-list p:hover {
+    color:#56B929;
+    /* border-bottom: 3px solid #56B929; */
+    cursor: pointer;
+}
+.left .course-det {
+    background: #F5F8F4;
+    border: 1px solid #E6E6E6;
+    margin-top: 5px;
+}
+.left .course-det>div {
+    padding:40px;
+    font-size: 14px;
+}
+.left .course-det div .p1 {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 18px;
+}
+.left .course-summarze {
+    color:#666;
+    margin-top: 20px;
+}
+.left .course-summarze h3 {
+    margin-bottom: 10px;
+    color:#000;
+}
+.left .course-summarze h6 {
+    cursor: pointer;
+    margin: 10px 0;
+}
+.left .course-summarze p {
+    font-size: 12px;
+    text-indent: 26px;
+    line-height: 22px;
+}
+.hide {
+    height: 0;
+    overflow: hidden;
+    transition: all 1s linear;
+}
+.dis {
+    height: 180px;
+}
+/* 右部分 */
+

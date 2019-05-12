@@ -1,0 +1,477 @@
+body {
+    background-color: #EEEEEE;
+}
+/* 轮播图 */
+/* 初始背景颜色 */
+.index-carousel {
+    background-color: #070A33;
+    transition:all 0.5s;
+    width: 100%;
+}
+.index-carousel>div {
+    position: relative;
+    height: 380px;
+    width: 860px;
+    margin: 0 auto;
+    overflow: hidden; 
+}
+.index-carousel>div ul {
+    display: flex;
+    position: absolute;
+    left:0;
+    transition: all 0.5s;
+}
+.index-carousel>div .arrows .left,.index-carousel>div .arrows .right {
+    position: absolute;
+    top:170px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0C0C1E;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+}
+.index-carousel>div .arrows .left:hover,.index-carousel>div .arrows .right:hover {
+    background:rgba(50,50,50,0.3);
+    color: rgba(255,255,255,0.7)
+}
+.index-carousel>div .arrows .left {
+    left:10px;
+    cursor: pointer;
+}
+.index-carousel>div .arrows .right {
+    right:10px;
+    cursor: pointer;
+}
+.index-carousel>div .dot ul {
+    position: absolute;
+    top: 350px;
+    left: 360px;
+}
+.index-carousel>div .dot ul li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* 初始第一个激活绿色 */
+.index-carousel>div .dot ul #li1 {
+    background-color: #55B929;
+} 
+
+/* 高校 */
+.index-school {
+    background: #fff;
+}
+.index-school div {
+    display:flex;
+    width: 1260px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.index-school p {
+    /* float: left; */
+    line-height: 50px;
+    font-size: 16px;
+}
+.index-school a {
+    color: #55B929 ;
+}
+.index-school img {
+    margin:10px 40px;
+    height: 35px;
+}
+/* 推荐课程 */
+.index-recommended {
+    /* background-color: #EEEEEE; */
+    padding: 50px 4%; 
+}
+.index-recommended .recommended-title {
+    font-size: 25px;
+    margin:0 0 20px 12px;
+}.index-recommended ul {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1260px;
+}
+.index-recommended li {
+    /* float: left; */
+    /* margin-right: 18px; */
+    width: 230px;
+    height:260px;
+    background: #fff;
+    overflow: hidden;
+    transition: all 1s;
+}
+.index-recommended li:hover {
+    box-shadow: 0px 0px 10px #333;
+}
+.index-recommended ul img {
+    height:136px;
+    width:230px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.index-recommended ul img:hover {
+    transform: scale(1.1);
+}
+.index-recommended ul .course {
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px 0px 20px 10px;
+}
+.index-recommended ul .school,.index-recommended ul .content {
+    color:#999;
+    font-size: 13px;
+    display: inline-block;
+    padding:4px 20px 0px 10px;
+}
+.index-recommended ul .read {
+    color:#999;
+    font-size: 13px;
+    margin-right: -50px;
+    float: right;
+    margin-top: 5px;
+}
+.index-recommended ul .read-logo {
+    width: 6px;
+    height: 10px;
+    float: right;
+    margin-right: 60px;
+    margin-top: 10px;
+}
+
+/* 签到悬浮窗 */
+.sign-in {
+    width:40px;
+    height:40px;
+    text-align: center;
+    background-color: #55B929;
+    position: fixed;
+    top: 550px;
+    right: 20px;;
+    padding:10px 0;
+    font-size: 14px;
+    z-index: 2;
+}
+
+.index-column ul {
+    width: 1260px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.index-column img {
+    height: 97px;
+}
+/* 楼层滚动列表 */
+.floor-list {
+    position: fixed;
+    top: 20%;
+    width: 100px;
+    height: 200px;
+    background: rgba(117, 117, 170, 0.64);
+    text-align: center;
+    margin-left: -90px;
+    opacity: 0.6;
+    transition: all 1s linear;
+}
+.floor-list:hover {
+    transform: translateX(90px);
+    opacity: 1;
+}
+.floor-list ul {
+    margin: 20px 0;
+
+}
+.floor-list ul li {
+    margin: 6px 0;
+}
+
+/* 横幅 */
+.index-banner {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.index-banner>div {
+    position: absolute;
+    display: flex;
+}
+.index-banner>div img {
+    height: 300px;
+}
+
+/* 各个课程 */
+.index-course {
+    padding: 50px 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1260px;
+    position: relative;
+    margin: 0 auto;
+}
+.index-course .list {
+    display: flex;
+    width: 1260px;
+}
+/* 课程列表 */
+.index-course .index-course-title {
+    /* float: left; */
+    font-size: 26px;
+    margin:0 44px 20px 0;
+}
+.index-course .index-course-list {
+    padding-top: 6px;
+}
+.index-course ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.index-course ul .index-course-list {
+    /* float: left; */
+    margin-right: 20px;
+    font-size: 15px;
+}
+.index-course>div a:hover {
+    color: #55B929;
+}
+/* 课程主体 */
+.index-course .index-course-left {
+    /* float: left; */
+    display: flex;
+    flex-wrap:wrap;
+    background: #ffF;
+    width: 18%;
+    height: 420px;
+    opacity: 0.8;
+}
+.index-course .index-course-pic {
+    position: absolute;
+    top: 130px;
+    width: 224px;
+}
+.index-course .index-course-left .course-col1 {
+    background: #6FC7CA;
+}
+.index-course .index-course-left>div {
+    display: flex;
+    flex-direction: column;
+}
+.index-course .index-course-left .course-hr {
+    background: #fff;
+    width: 50px;
+    height: 3px;
+    margin-bottom: 5px;
+}
+.index-course .index-course-left .course-title {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.index-course .index-course-left .course-title a,.index-course .index-course-left h2 a{
+    color: #fff;
+}
+.index-course .index-course-left .course-title a:hover {
+    color: #F1E5C4;
+}
+
+.index-course .index-course-left .course-bom {
+    /* margin:170px 0 0 10px; */
+    font-size: 13px;
+    position: absolute;
+    top: 336px;
+    left: 10px;
+}
+.index-course .index-course-left .course-bom p {
+    margin: 8px 0;
+}
+/* 圆圆按钮 */
+.index-course .index-course-left .course-circular {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: transparent;
+    margin: 62px 0 0 74px;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+.index-course .index-course-left .course-circular:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 3px 1px #333;
+}
+.index-course .index-course-left .course-circular .square {
+    width: 30px;
+    height: 40px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 13px;
+    top: 10px;
+}
+/* 课程细分 */
+.index-course .index-course-mid {
+    /* float: left; */
+    width: 64%;
+    height: 300px;
+}
+.index-course .index-course-mid li {
+    float: left;
+    width: 240px;
+    height: 200px;
+    background: #fff;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.index-course .index-course-mid li img {
+    height: 134px;
+    width: 240px;
+}
+.index-course .index-course-mid .course-title {
+    display: inline-block;
+    padding: 5px 0 10px 12px;
+    font-size: 14px;
+}
+.index-course .index-course-mid .course-school {
+    font-size: 12px;
+    display: inline-block;
+    padding-left: 12px;
+    color: #999999;
+}
+.index-course .index-course-mid .course-read {
+    float: right;
+    font-size: 12px;
+    color: #999999;
+    margin-right: 16px;
+    margin-top: 4px;
+}
+
+.index-course .index-course-left>div {
+    width: 100%;
+    height: 300px;
+    padding: 30px 0 5px 5px;
+    position: relative;
+}
+.index-course .index-course-left .course-col2 {
+    background-color: #F9CB50;
+}
+.index-course .index-course-left .course-col3 {
+    background-color: #6199B9;
+}
+.index-course .index-course-left .course-col4 {
+    background-color: #F9CB50;
+}
+.index-course .index-course-left .course-col5 {
+    background-color: #72CBCF;
+}
+.index-course .index-course-left .course-col6 {
+    background-color: #99C04F;
+}
+/* 热门课程列表 */
+.index-course .index-course-right {
+    /* float: left; */
+    background:#fff;
+    width: 16%;
+    height: 400px;
+    padding: 10px;
+    position:relative;
+}
+.index-course .index-course-right .fang {
+    background-color: #56B929;
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    top: 13px;
+}
+.index-course .index-course-right .title {
+    font-size: 18px;
+    margin-left: 10px;
+}
+.index-course .index-course-right ul li {
+    margin: 20px 0;
+    font-size: 14px;
+}
+.index-course .index-course-right ul li p {
+    font-size: 12px;
+    color:#999;
+    margin-top: 14px;
+    text-indent: 14px;
+}
+
+/* 图片动效 */
+.index-course .index-course-mid img {
+    cursor: pointer;
+    transition: all 1s;
+}
+.index-course .index-course-mid img:hover {
+    transform: scale(1.1);
+}
+.index-course .index-course-mid li {
+    overflow: hidden;
+    transition: all 1s;
+}
+.index-course .index-course-mid li:hover { 
+    box-shadow: 0px 1px 10px #333;
+}
+
+/* 留言 */
+.index-message {
+    background: url(../images/index/mbg.jpg) no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+}
+.index-message .mbg {
+    background-color: rgba(48,57,95,0.9);
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.index-message .message-title {
+    font-size: 30px;
+
+    padding: 60px;
+    margin: 0 auto;
+}
+.index-message ul {
+    display: flex;
+    margin:0 auto;
+    width: 1260px;;
+}
+.index-message ul li {
+    text-align: center;
+    width: 280px;
+    font-size: 14px;
+    margin-left: 104px;
+}
+.index-message ul li p {
+    margin: 10px 0;
+}
+.index-message ul li .name {
+    font-size: 20px;
+}
+.index-message ul li .msg {
+    text-align: left;
+}
+.index-message button {
+    background-image:linear-gradient(to bottom,#60D823 0%,#70DF08 100%);
+    width: 180px;
+    height: 38px;
+    font-size: 17px;
+    border-radius:5px;
+    outline: 0;
+    margin: 0 auto;
+}
+
+/* 广告 */
+.index-adv {
+    width: 1260px;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}

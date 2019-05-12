@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/initial.css">
+</head>
+<body>
+    <div class="login-bg full-screen table">
+        <div class="login-list color-white">
+            <table>
+                <tr>
+                    <td class="list-title">登录MOOC</td>
+                    <td class="reg"><a href="reg.html" class="color-white">新用户注册</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" id="uname" placeholder="请输入您的用户名" onblur="login_lose_uname()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="msg"><span id="uname_msg"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="password" id="upwd" placeholder="请输入您的密码" onblur="login_lose_upwd()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="msg"><span id="upwd_msg"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="ts" id="s" value="0" checked><label for="s">学生</label>
+                        <input type="radio" name="ts" id="t" value="1"><label for="t">教师</label>
+                    </td>
+                    <td class="forget-mm"><a href="javascript:;" class="color-white">忘记密码？</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button onclick="login()" class="color-white">登录</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="js/login.js"></script>
+</html>

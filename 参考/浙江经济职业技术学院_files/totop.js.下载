@@ -1,0 +1,21 @@
+$(document).ready(function() {
+		var oTopBtn = document.getElementById('to_top');
+		var p=$(window.parent.document.body);
+		p.append(oTopBtn);
+		if(oTopBtn){
+			$(oTopBtn).css("display","hidden");
+		}
+		var top1= $('#top', parent.document);
+		var  backToTopFun = function() {
+			try {
+				var st = $(top.document).scrollTop();
+				(st > 0)? top1.show(): top1.hide();    
+			} catch (e) {
+				
+			}
+			
+			
+		};
+		$(parent.document).bind("scroll", backToTopFun);
+	    
+	});

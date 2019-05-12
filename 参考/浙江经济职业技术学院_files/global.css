@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*格式化样式*/
+*{margin:0;padding:0}
+body{font:12px/1.5 MIcrosoft YaHei,Arial, Helvetica, sans-serif;color:#4c4c4c}
+table{width:100%; border-collapse:collapse;border:none;border-spacing:0}
+a{color:#4c4c4c;text-decoration:none;}
+img{border:none}
+input{vertical-align:middle;outline:none}
+textarea{outline:none;}
+ul,ol,dl{list-style:none;}
+b,em,i,u,strong{font-weight:normal;font-style:normal;text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-size:14px;font-weight:normal;}
+
+/*公共样式*/
+.fl{float:left;}
+.fr{float:right;}
+.clearfix{overflow:hidden;zoom:1}
+.clear{clear:both}
+
+.wrap1200{width:1200px;margin:0 auto}
+.wrap956{width:956px;margin:0 auto}
+
+/*右侧标题*/
+.rightTitle{margin-top:8px;border-bottom:solid 2px #ebebeb;height:50px;}
+.fontTitle{float:left}
+.fontTitle li{float:left;height:49px;line-height:49px;font-size:18px;padding:0 10px;margin-right:24px;position:relative}
+.fontTitle li.cur{border-bottom:solid 3px #0099ff;}
+.fontTitle li.cur a{color:#0099ff}
+.rightCz{float:right}
+.rightCz li{float:left;margin-top:20px;margin-left:20px;font-size:14px}
+.rightCz li a{color:#0099ff}
+.rightCz li a i{display:inline-block;vertical-align:middle;margin-right:7px;}
+.recycle{width:17px;height:17px;background:url(../images/icons.png) no-repeat center;background-position:-49px top;}
+.client{width:18px;height:16px;background:url(../images/icons.png) no-repeat center;background-position:-25px top;}
+.instruction{width:17px;height:17px;background:url(../images/icons.png) no-repeat center;background-position:left top;}
+.circleAdd{display:inline-block;width:28px;height:28px;background:url(../images/icons.png) no-repeat -58px -79px;margin-top:15px;margin-lft:10px}
+
+/*按钮样式*/
+.blueBgBtn{height:34px;line-height:34px;background:#0099ff;border-radius:3px;color:#fff;display:inline-block;padding:0 15px;font-size:14px}
+.blueBgBtn:hover{background:#33adff}
+.upload{display:inline-block;width:16px;height:16px;background:url(../images/icons.png) no-repeat;background-position:-78px top;vertical-align:middle;margin-right:8px}
+.blueBtn{display:inline-block;width:66px;height:30px;text-align:center;line-height:30px;font-size:14px;color:#0099ff;border:solid 1px #0099ff;border-radius:20px}
+.blueBtn:hover{background:#0099ff;color:#fff}
+.grayBtn{display:inline-block;width:66px;height:30px;text-align:center;line-height:30px;font-size:14px;color:#ccc;border:solid 1px #ccc;border-radius:20px}
+.grayBtn:hover{background:#ccc;color:#fff}
+
+
+/*检索*/
+.search{width:224px;height:26px;background:#f0f0f0;border-radius:20px}
+.input{padding:0 10px;width:175px;border:none;background:none;line-height:26px}
+.sub{width:18px;height:18px;background:url(../images/icons.png) no-repeat center;background-position:-20px -26px;border:none;cursor:pointer;margin-top:4px;margin-right:5px}
+

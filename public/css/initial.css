@@ -1,0 +1,40 @@
+body,p,div,span,h1,h2,h3,h4,h5,h6,ul,ol,li,tr,td,th,input {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000;
+}
+.aa:hover {
+    color: #55B929;
+}
+ol,ul,li {
+    list-style: none;
+}
+/* 用于清除浮动 */
+.clear::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+/* 用于子元素外边距溢出 */
+.table:before {
+    content:"";
+    display: table;
+}
+
+/* 字体 */
+.color-white {
+    color: #fff;
+}
+
+/* 占满全屏 */
+.full-screen {
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+}

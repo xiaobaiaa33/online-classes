@@ -1,0 +1,11 @@
+.btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.btn button {
+    font-size: 30px;
+}
+#time {
+    color:#f00;
+    font-weight: bold;
+}

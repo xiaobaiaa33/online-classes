@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/initial.css">
+    <link rel="stylesheet" href="css/teacher.css">
+    <title>老师</title>
+</head>
+<body onload="get_score(),lookFile()">
+    <div class="width">
+        <div class="left">
+            <div class="information">
+                <img src="images/student/head.png">
+                <p class="color-white" data-target="obtain"></p>
+                <a href="change.html" class="color-white">账号管理</a>
+            </div>
+            <div>
+                <ul>
+                    <li class="active"><a href="javascript:;" data-toggle="switch" data-target="#course">课程</a></li>
+                    <li><a href="javascript:;" data-toggle="switch" data-target="#manage">管理</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <!-- 课程 -->
+            <div id="course" class="dis">
+                <div>
+                    <span>上传课件</span>
+                    <form action="http://127.0.0.1:8080/load/uploadFile" method="POST" enctype="multipart/form-data">
+                        <input type="file" name="upload_file">
+                        <input type="submit" value="提交">
+                    </form>
+                </div>
+                <p>课程</p>
+                <ul>
+                    
+                </ul>
+                <button>删除</button>
+            </div>
+            <!-- 管理 -->
+            <div id="manage">
+                <p>学生成绩管理</p>
+                <table id="score_sheet"></table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/teacher.js"></script>
+</html>

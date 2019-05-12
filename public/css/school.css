@@ -1,0 +1,17 @@
+#content {
+    position: relative;
+    margin: 0 auto;
+}
+.box {
+    padding: 15px 0 0 15px;
+    float: left;
+}
+.img {
+    border:2px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    padding: 8px;
+    border-radius: 5px;
+}
+.img img {
+    width: 300px;
+}

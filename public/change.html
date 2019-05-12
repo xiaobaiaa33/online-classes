@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/initial.css">
+    <link rel="stylesheet" href="css/change.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="change-bg table full-screen">
+        <div class="change-list">
+            <table>
+                <tr>
+                    <td class="list-title color-white">修改信息</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr colspan="2">
+                    <td>
+                        <img src="images/student/head.png">
+                    </td>
+                </tr>
+                <tr colspan="2">
+                    <td>
+                        <a class="color-white">
+                        <!-- <form action="http://127.0.0.1:8080/load/avatars" method="POST" enctype="multipart/form-data"> -->
+                            <input type="file" name="avatar_img">上传头像</a>
+                            <input type="submit" value="提交">
+                        <!-- </form> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="password" id="upwd" placeholder="请输入原密码">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="msg"><span id="upwd_msg"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="password" id="new_upwd" placeholder="请输入新密码">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="msg"><span id="new_upwd_msg"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="password" id="new_upwd2" placeholder="请确认新密码">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="msg"><span id="new_upwd_msg2"></span></td>
+                </tr>
+                <tr> 
+                    <td colspan="2">
+                        <button class="color-white" data-toggle="submit">确定</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="js/change.js"></script>
+</html>

@@ -1,0 +1,89 @@
+.width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 左边信息 */
+.left {
+    float: left;
+    background-image: linear-gradient(to right,#45d586 0%,#38cd9c 100%);
+}
+.left .information{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.left .information img {
+    margin-top:20px;
+}
+.left .information p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.left .information a {
+    display: inline-block;
+    width: 76px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #faa046;
+    border-radius:20px;
+    font-size: 14px;
+}
+
+/* 列表 */
+.left div ul li {
+    height: 40px;
+    padding-left: 30px;
+    line-height: 40px;
+}
+.left div ul li a {
+    color: #fff;
+}
+.left div ul li a:hover {
+    color: #0099ff;
+}
+/* 右边课程 */
+.right {
+    float: left;
+    width: 800px;
+    margin:20px 0 0 30px;
+}
+/* 默认不显示 */
+.right>div {
+    display: none;
+}
+/* 学习的课 */
+.right div p {
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ccc;
+}
+.right div div {
+    float: right;
+    margin-top: 8px;
+    font-size: 14px;
+    color:#0099ff;
+}
+#course form {
+    float: right;
+}
+
+/* 选中 */
+.active {
+    background-color: rgb(142, 230, 252);
+}
+.right .dis {
+    display: block;
+}
+
+/* 成绩表 */
+#score_sheet {
+    width: 100%;
+    text-align: center;
+}
+/* 课程 */
+#course ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    font-size: 20px;
+}
